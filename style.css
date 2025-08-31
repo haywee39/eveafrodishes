@@ -32,11 +32,11 @@ body {
   align-items: center;
   
   font-family: "Nunito", sans-serif;
-  background: #fff;
+  /* background: #fff;
   background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
     radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
   background-repeat: no-repeat;
-  
+   */
 }
 
 /* ------ */
