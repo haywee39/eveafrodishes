@@ -32,11 +32,11 @@ body {
   align-items: center;
   
   font-family: "Nunito", sans-serif;
-  /* background: #fff;
-  background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
+  background: #fff;
+  /* background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
     radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
-  background-repeat: no-repeat;
-   */
+  background-repeat: no-repeat; */
+  
 }
 
 /* ------ */
@@ -289,14 +289,21 @@ body {
   opacity: 1;
 }
 .one .best{
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 40px;
+  /* font-weight: 800;  */
+  font-family: "Frijole", system-ui;
+  /* text-align: center; */
+  /* font-size: 2rem; */
+  /* letter-spacing: 3px; */
+  color: rgb(50, 26, 5);
 }
+
 
 .one .tasty{
   margin-left: 100px;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 30px;
+  /* font-weight: 700; */
+  font-family: "Frijole", system-ui;
 }
 
 .home-deli{
@@ -306,6 +313,25 @@ body {
 }
 /* -------- */
 /* CONTENT */
+#upper-cover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  padding: 2rem;
+   background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
+    radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
+  background-repeat: no-repeat;
+}
+#upper-cover h1{  
+  font-family: "Frijole", system-ui;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: rgb(50, 26, 5);
+}
 
 #content {
   display: grid;
@@ -314,6 +340,7 @@ body {
   padding: 60px 40px;
   min-height: 100dvh;
   overflow: hidden;
+   
 }
 
 .card {

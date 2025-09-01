@@ -1,0 +1,71 @@
+html{
+  overflow-x: hidden;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+h1{
+      font-family: "Frijole", system-ui;
+}
+p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/& */
+
+
+    #landing-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    background-image: url(./rollamala.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+.child{
+    position: absolute;
+    width:100%;
+    height:100%;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(50, 26, 5, 0.5);
+    z-index: 100;
+    
+}
+.title{
+    display: flex;
+    font-size: 40px;
+    margin-top: 25vh;
+    justify-content: center;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.class-category{
+    width: 40%;
+    background-color: white;
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+
+
+/* ****************************************************** */
+/* Responsive Design */
+@media (max-width: 768px) {
+ .child{
+   padding: 0 2rem;
+  }
+  .title{
+    margin-top: 15vh;
+  }
+}
