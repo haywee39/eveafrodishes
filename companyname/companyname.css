@@ -108,8 +108,9 @@
   padding: 0;
 }
 .logo-name img{
-  width: 300px;
-  height: 300px;
+  margin-top: 2rem;
+  width: 280px;
+  height: 280px;
   /* object-fit: cover; */
 }
 .cova{
