@@ -14,6 +14,7 @@
   padding: 2rem;
   justify-content: center;
   align-items: center;
+  background-color: yellow;
   /* background: linear-gradient(60deg, rgb(19, 9, 9, 0.3) 0%, rgb(50, 26, 5, 0.3) 100%); */
 }
 .logo-name{
@@ -140,7 +141,7 @@
   color: rgb(50, 26, 5);
 }
 .name h4{
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 .socials{
   width: 100%;
