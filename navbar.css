@@ -77,7 +77,8 @@
 
 /* Hamburger menu */
 .hamburger {
-    background-color: rgb(50, 26, 5);
+    /* background-color: rgb(50, 26, 5); */
+    background-color:  rgb(255, 165, 0);
     border-radius: 10%;
     position: fixed;
     top: 2rem;

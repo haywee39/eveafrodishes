@@ -14,8 +14,6 @@
   padding: 2rem;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
-  /* background: linear-gradient(60deg, rgb(19, 9, 9, 0.3) 0%, rgb(50, 26, 5, 0.3) 100%); */
 }
 .logo-name{
   display: flex;

@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* this comment  is the code for the theme color:
+	background: linear-gradient(60deg, rgb(19, 9, 9) 0%, rgb(50, 26, 5) 100%);  
+  with orange
+  with rgba(255, 87, 34, 1)
+  with rgb(50, 26, 5) for font color*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(50, 26, 5);
+  /* font-size: 18px; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: "Nunito", sans-serif;
+  background: #fff;
+  /* background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
+    radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
+  background-repeat: no-repeat; */
+  
+}
+
+/* ------ */
