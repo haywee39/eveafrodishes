@@ -223,6 +223,12 @@ body {
 .brief-eve i{
   font-weight: bold;
 }
+.brief-eve span{
+   font-family: "Seaweed Script", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
