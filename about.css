@@ -302,7 +302,7 @@ body {
 /* ********************* */
   .stack {
     position: relative;
-    width: 80%;
+    width: 85vw;
     height: 80%;
     display: grid;
     border-radius: 20%;
@@ -313,7 +313,7 @@ body {
 
   .diamond {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-color: rgb(255, 165, 0);
     transform: rotate(45deg);
@@ -321,5 +321,18 @@ body {
     z-index: 0;
     animation: bob 2.4s ease-in-out infinite;
   }
+    /* Square image on top */
+  .photo {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20%;
+    z-index: 1;
+  }
+  .slogan{
+  font-size: 1.7rem;  
+  text-align: left;
+}
 
 }
