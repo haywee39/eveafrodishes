@@ -38,7 +38,6 @@ body {
 /* ************************************************* */
 /* Student-pro Section */
 .student-pro {
-    margin-top: 3rem;
     padding: 4rem 2rem;
     text-align: center;
     align-items: center;
@@ -46,7 +45,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    padding: 20px;
     height: auto;
     gap: 10px;
     justify-content: center;
@@ -123,7 +121,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 30%;
+    width: 40%;
     height: auto;
     gap: 10px;
     text-align: left;
@@ -150,7 +148,6 @@ body {
 /* Testimonial Section */
 .testimonials {
   width: 100vw;
-  height: auto;
   padding: 70px 20px;
   text-align: center;
   position: relative;
@@ -163,7 +160,7 @@ body {
   font-size: 2rem;
   margin-bottom: 40px;
   color: rgb(50, 26, 5);
-  font-weight: bold;
+    font-weight: bold;
   font-family: "Frijole", system-ui;
 }
 
@@ -244,6 +241,7 @@ body {
 .testimonial-carousel .prev:hover,
 .testimonial-carousel .next:hover {
   background: rgb(50, 26, 5);
+  color: white;
   /* z-index: 100; */
 }
 
@@ -279,7 +277,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: red; */
 }
+
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
