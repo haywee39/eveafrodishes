@@ -1,4 +1,52 @@
 
+{/* <script> */}
+    document.addEventListener("DOMContentLoaded", function() {
+        const studentItems = document.querySelectorAll('.student-pro .student-item');
+
+        const handleIntersection = (entries, observer) => {
+            entries.forEach(entry => {
+                const studentItem = entry.target;
+                const stack = studentItem.querySelector('.stack');
+                const value = studentItem.querySelector('.value');
+
+                if (entry.isIntersecting) {
+                    // Add active class to slide in elements
+                    setTimeout(() => {
+                        if (stack) stack.classList.add('active');
+                    }, 300);
+
+                    setTimeout(() => {
+                        if (value) value.classList.add('active');
+                    }, 600);
+                } else {
+                    // Remove active class when out of view
+                    if (stack) stack.classList.remove('active');
+                    if (value) value.classList.remove('active');
+                }
+            });
+        };
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver(handleIntersection, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3 // Trigger when 30% of the element is visible
+        });
+
+        // Observe each student item
+        studentItems.forEach(item => {
+            observer.observe(item);
+        });
+    });
+{/* </script> */}
+
+
+
+
+
+
+
+
 // TESTIMONIAL ON HOMEPAGE 
 // Carousel Logic
 const cards = document.querySelectorAll(".testimonial-card");

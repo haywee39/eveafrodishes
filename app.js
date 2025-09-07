@@ -1,3 +1,36 @@
+// Slide effect for brief. eve 
+    document.addEventListener("DOMContentLoaded", function() {
+        const briefEveElements = document.querySelectorAll('.brief-eve .slide-in-left, .brief-eve .slide-in-right');
+
+        const handleIntersection = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersection, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        });
+
+        briefEveElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+{/* </script> */}
+
+
+
+
+
+
+
+
 const modalOpenBtns = document.querySelectorAll(".modal-open");
 const modalCloseBtns = document.querySelectorAll(".modal-close");
 const body = document.querySelector("body");
