@@ -248,6 +248,7 @@ body {
   height: 100%;
   border-radius: 15px; 
   box-shadow: 0 6px 18px rgb(50, 26, 5);
+  overflow-x: hidden;
 }
 .brief-eve i{
   font-weight: bold;
