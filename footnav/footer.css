@@ -196,6 +196,9 @@
 		text-align: center;
 	}
 
+	.footer-distributed .footer-center{
+	width: 95%;
+}
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
@@ -205,7 +208,8 @@
   }
 
   .footer-dist-txt > p {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
+	padding: 0;
   }
 
 }
