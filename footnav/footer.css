@@ -1,45 +1,22 @@
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-} */
-
-/* section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-} */
 
 .footer-distributed{
-	/* background: #666; */
 	background: linear-gradient(60deg, rgb(19, 9, 9) 0%, rgb(50, 26, 5) 100%);
-	/* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); */
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	/* font: bold 16px; */
 	padding: 50px 45px;
 	color: white;
 }
 .footer-dist-txt{
 	 display: grid;
   	place-items: center;
-  	/* padding: 20px 150px 60px; */
 	padding: 2rem;
 	margin-bottom: 2rem;
-	/* background: orange; */
-	/* background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
-    radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%); */
 }
 .footer-dist-txt p{
-  color: white;
-  text-align: center;
-  /* font-size: 10px; */
+  color: rgb(255, 165, 0);
+  padding: 2rem;
+  font-weight: lighter;
 }
 
 .footer-distributed .footer-left,
@@ -58,8 +35,9 @@
 /* The company logo */
 
 .footer-distributed h3{
+	font-family: "Frijole", system-ui;
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	/* font: normal 36px; */
 	margin: 0;
 }
 
@@ -191,6 +169,14 @@
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.footer-right .developer{
+	/* line-height: 20px; */
+	color:  white;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
