@@ -200,7 +200,7 @@ body {
   }
   .menu-section h2{
     color: rgb(50, 26, 5);
-    text-shadow: 2px 2px 2px rgb(255, 165, 0);
+    text-shadow: 1px 1px 1px rgb(255, 165, 0);
     background-color: white;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -268,7 +268,7 @@ body {
   
   .menu-card-front h2 {
     color: rgb(50, 26, 5);
-    text-shadow: 2px 2px 2px rgb(255, 165, 0);
+    text-shadow: 1px 1px 1px rgb(255, 165, 0);
     margin: 10px 0;
   }
 
@@ -304,12 +304,16 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background-image: url(./logosuggest/Exact\ EveAfroDishesLogo_20250831_214831_0000.png);
+    /* background-image: url(./logosuggest/Exact\ EveAfroDishesLogo_20250831_214831_0000.png); */
     background-repeat: repeat;
     background-size: cover;
     background-position: center center;
     opacity: 0.3;
     pointer-events:none
+  }
+
+  .menu-card-back i{
+    font-size: 1.5rem;
   }
   
   
