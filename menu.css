@@ -179,3 +179,161 @@ body {
 }
 
 /* ------ */
+/* FOOD SECTION CATEGORY  */
+/* Basic Styling for Menu Section */
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    padding: 50px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
+    radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
+    background-repeat: repeat;
+  }
+
+  .menu-section h1{
+    text-shadow: 2px 2px 2px rgb(255, 165, 0);
+  }
+  .menu-section h2{
+    color: rgb(50, 26, 5);
+    text-shadow: 2px 2px 2px rgb(255, 165, 0);
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Menu Card Styles */
+  .menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-card {
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgb(50, 26, 5) 5px;
+    transition: transform 0.6s ease;
+  }
+  
+  .menu-card-front,
+  .menu-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgb(50, 26, 5, 0.2);
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .menu-card-front::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background-image: url(./menuimgs/moinmoinRbv41abVS8tN\ \(1\).jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.2;
+    pointer-events:none
+  }
+  
+  .menu-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transform: rotateY(0);
+  }
+  
+  .menu-card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .menu-card-front h2 {
+    color: rgb(50, 26, 5);
+    text-shadow: 2px 2px 2px rgb(255, 165, 0);
+    margin: 10px 0;
+  }
+
+
+  .details-btn {
+    margin-top: auto;
+    padding: 8px 15px;
+    font-size: 1em;
+    background: rgb(50, 26, 5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .details-btn:hover {
+    background: rgb(50, 26, 5, 0.3);
+  }
+  
+  .menu-card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    transform: rotateY(180deg);
+  }
+
+  .menu-card-back::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(./logosuggest/Exact\ EveAfroDishesLogo_20250831_214831_0000.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.3;
+    pointer-events:none
+  }
+  
+  
+  .back-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    background: rgb(50, 26, 5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .back-btn:hover {
+    background: rgb(50, 26, 5, 0.2);
+  }
+  
+  /* Flip Effect */
+  .menu-card.flip .menu-card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .menu-card.flip .menu-card-back {
+    transform: rotateY(0);
+  }
+
+
