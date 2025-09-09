@@ -11,9 +11,13 @@ fetch("pagetop/pagetop.html")
     // Read data from the <div id="top-page"> attributes
     const bg = container.dataset.bg;
     const title = container.dataset.title;
+    const a = container.dataset.a;
+    // const a = container.dataset.a;
+
 
     // Apply background image + title
     if (bg) landingTop.style.backgroundImage = `url(${bg})`;
     if (title) landingTop.querySelector(".title").textContent = title;
+    if (a) landingTop.querySelector("a").textContent = a;
   })
   .catch(error => console.error("Error loading top-page:", error));
