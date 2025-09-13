@@ -20,16 +20,78 @@
     <link rel="stylesheet" href="./menu.css">
     <title>Menu - Eve Afro Dishes</title>
 </head>
-<body>
+<body id="top"> 
+
+
   <!-- ******************************************* -->
     <div id="navbar-placeholder"></div>
   <!-- ******************************************* -->
     <div id="top-page" data-bg="./pagetop/eforiro.jpg" data-title="Our Menus" data-a="Starter"></div>
     <!-- ***************************************************** -->
+    <!-- NAVIGATION this is the category section that will take us fast to the menu items for each category -->
+    <section class="menu-categories-nav">
+    <h2 class="the-section-title">Explore Our Menus</h2>
+    <p class="section-subtitle">Click on a category to jump right to it!</p>
+
+    <div class="categories-container">
+        <!-- Starters -->
+        <div class="category-item" data-target="starters">
+            <img src="./maincategoryimg/starters.jpg" alt="Starters" class="category-icon">
+            <span class="category-name">Starters</span>
+        </div>
+
+        <!-- Stew Dishes -->
+        <div class="category-item" data-target="stew-dishes">
+            <img src="./maincategoryimg/stewdish.jpg" alt="Stew Dishes" class="category-icon">
+            <span class="category-name">Stew Dishes</span>
+        </div>
+
+        <!-- Rice -->
+        <div class="category-item" data-target="rice">
+            <img src="./maincategoryimg/rice.webp" alt="Rice" class="category-icon">
+            <span class="category-name">Rice Dishes</span>
+        </div>
+
+        <!-- Beans Dishes -->
+        <div class="category-item" data-target="beans-dishes">
+            <img src="./maincategoryimg/beans.jpg" alt="Beans Dishes" class="category-icon">
+            <span class="category-name">Beans Dishes</span>
+        </div>
+
+        <!-- Soup -->
+        <div class="category-item" data-target="soup">
+            <img src="./maincategoryimg/soups.jpg" alt="Soup" class="category-icon">
+            <span class="category-name">Soup Dishes</span>
+        </div>
+
+        <!-- Extras -->
+        <div class="category-item" data-target="extras">
+            <img src="./maincategoryimg/extras.jpg" alt="Extras" class="category-icon">
+            <span class="category-name">Extras</span>
+        </div>
+
+        <!-- Yam Dishes -->
+        <div class="category-item" data-target="yam-dishes">
+            <img src="./maincategoryimg/yamdish.webp" alt="Yam Dishes" class="category-icon">
+            <span class="category-name">Yam Dishes</span>
+        </div>
+
+        <!-- Special Dishes -->
+        <div class="category-item" data-target="special-dishes">
+            <img src="./maincategoryimg/specialdishes.jpg" alt="Special Dishes" class="category-icon">
+            <span class="category-name">Special Dishes</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+
  <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
             <!-- STARTERS CATEGORY  -->
 
-<section class="menu-section">
+<section id="starters" class="menu-section">
    
     <h1>STARTERS</h1>    
     <div class="menu-cards"> 
@@ -119,7 +181,7 @@
 
             <!-- STEW DISHES CATEGORY  -->
 
-<section class="menu-section">
+<section id="stew-dishes" class="menu-section">
    
     <h1>STEW DISHES</h1>    
     <div class="menu-cards"> 
@@ -256,7 +318,7 @@
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
         <!-- BEANS DISHES CATEGORY  -->
 
-<section class="menu-section">
+<section id="beans-dishes" class="menu-section">
    
     <h1>BEANS DISHES</h1>    
     <div class="menu-cards"> 
@@ -361,7 +423,7 @@
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
             <!-- SOUP CATEGORY  -->
 
-<section class="menu-section">
+<section id="soup" class="menu-section">
    
     <h1>SOUPS</h1>    
     <div class="menu-cards"> 
@@ -449,7 +511,7 @@
   <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
       <!-- RICE  CATEGORY  -->
 
-  <section class="menu-section">    
+  <section id="rice" class="menu-section">    
 
     <h1>RICE DISHES</h1>    
     <div class="menu-cards"> 
@@ -686,7 +748,7 @@
    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
             <!-- EXTRAS CATEGORY  -->
 
-<section class="menu-section">
+<section id="extras" class="menu-section">
    
     <h1>EXTRAS</h1>    
     <div class="menu-cards"> 
@@ -855,7 +917,7 @@
    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
             <!-- YAM DISHES CATEGORY  -->
 
-<section class="menu-section">
+<section id="yam-dishes" class="menu-section">
    
     <h1>YAM DISHES</h1>    
     <div class="menu-cards"> 
@@ -929,7 +991,7 @@
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
                 <!-- SPECIAL DISHES CATEGORY  -->
 
-<section class="menu-section">
+<section id="special-dishes" class="menu-section">
   
     <h1>SPECIAL DISHES</h1>    
     <div class="menu-cards"> 
@@ -1227,6 +1289,11 @@
     <!-- *********************************************   -->
     <div id="footer"></div>
     <!-- ************************************* -->
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- *************************** -->
 
 
     <script src="./navbar.js"></script>

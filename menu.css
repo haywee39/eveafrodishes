@@ -21,6 +21,7 @@
   /* font-size: 18px; */
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,14 +31,50 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  font-family: "Nunito", sans-serif;
   background: #fff;
   /* background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
     radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
   background-repeat: no-repeat; */
   
 }
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&& */
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #FF8C00; /* Orange background */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 
 
@@ -180,6 +217,73 @@ body {
 
 /* ------ */
 /* FOOD SECTION CATEGORY  */
+/* Menu Categories Navigation */
+.menu-categories-nav {
+    padding: 3rem 0;
+    width: 100vw;
+    text-align: center;
+    background-color: orange;
+    /* background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
+    radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
+    background-repeat: repeat; */
+}
+
+.the-section-title {
+  font-family: "Frijole", system-ui;
+    font-size: 2.5rem;
+    color: rgb(50, 26, 5);
+    text-shadow: white 1px 1px 1px;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:rgb(50, 26, 5);
+    margin-bottom: 2rem;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 100px;
+}
+
+.category-item:hover {
+    transform: scale(1.1);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover .category-icon {
+    transform: scale(1.05);
+}
+
+.category-name {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(50, 26, 5);
+}
 /* Basic Styling for Menu Section */
 .menu-section {
     display: flex;
