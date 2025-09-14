@@ -1,0 +1,186 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* this comment  is the code for the theme color:
+	background: linear-gradient(60deg, rgb(19, 9, 9) 0%, rgb(50, 26, 5) 100%);  
+  with orange
+  with rgba(255, 87, 34, 1) orange
+  with rgb(50, 26, 5) for chocolate font color*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(50, 26, 5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* ------ */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/* ******************************************** */
+
+
+
+/* .service-head{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: first baseline;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+} */
+
+/* .service-head h1{
+    color: rgb(50, 26, 5);
+} */
+
+/* .service-head p{
+    font-size: 20px;
+    color: black;
+} */
+
+
+.menu-container1{
+  visibility: visible;
+  display: grid;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua;  */
+}
+
+/* *********************************************** */
+/* 
+.menu-container{
+  visibility: hidden;
+  display: none;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color:red; 
+}  */
+
+.cover-menu{
+  display: flex;
+  width: 90vw;
+  height: 60vh;
+  /* background-color: rgb(255, 123, 0); */
+
+}
+
+.img-left{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
+    radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
+  background-repeat: no-repeat;
+}
+.img-left h1{
+    color: rgb(50, 26, 5);
+    text-shadow: 1px 1px 1px rgb(255, 165, 0);;
+    padding-top: 15px;
+}
+.img-left h3{
+  color: rgb(50, 26, 5);
+  padding-top: 10px;
+
+}
+
+.blinking-arrow {
+  display: inline-block;
+  font-size: 30px; /* Adjust the size as needed */
+  color: rgb(50, 26, 5);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.img-left p{
+  margin-top: 4vh;
+  font-style: italic;
+  font-size: 18px;
+  color:rgb(50, 26, 5);
+  text-align: center;
+
+}
+
+.img-left img{
+  width: 100%;
+  height: 100%;
+}
+/* ******************************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 912px){
+
+.menu-container1{
+  visibility:hidden;
+  display: none;
+}
+/* ****************************/
+.menu-container{
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: yellowgreen; */
+}
+.cover-menu{
+  flex-direction:column;
+  width: 85vw;
+  height: auto;
+  /* background-color: red; */
+}
+
+.img-left{
+  width: 100%;
+  height: 55vh;
+}   
+
+
+}
