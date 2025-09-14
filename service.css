@@ -159,7 +159,7 @@ body {
 @media (width < 912px){
 
 .menu-container1{
-  visibility:hidden;
+  /* visibility:hidden; */
   display: none;
 }
 /* ****************************/
