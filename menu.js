@@ -52,3 +52,39 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+// JAVASCRIPT FOR ALLERGY INFO POP-UP 
+document.addEventListener("DOMContentLoaded", function() {
+    const allergyModal = document.getElementById("allergyModal");
+    const closeModal = document.querySelector(".close-modal");
+    const closeBtn = document.querySelector(".modal-close-btn");
+
+    // Show the modal when the page loads (or when menu section is opened)
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            allergyModal.classList.add("show");
+            document.body.style.overflow = "hidden"; // Prevent scrolling
+        }, 1000); // Show after 1 second
+    });
+
+    // Close the modal when the close button is clicked
+    closeModal.addEventListener("click", function() {
+        allergyModal.classList.remove("show");
+        document.body.style.overflow = "auto"; // Re-enable scrolling
+    });
+
+    // Close the modal when the "Got it!" button is clicked
+    closeBtn.addEventListener("click", function() {
+        allergyModal.classList.remove("show");
+        document.body.style.overflow = "auto"; // Re-enable scrolling
+    });
+
+    // Close the modal when clicking outside the modal content
+    allergyModal.addEventListener("click", function(event) {
+        if (event.target === allergyModal) {
+            allergyModal.classList.remove("show");
+            document.body.style.overflow = "auto"; // Re-enable scrolling
+        }
+    });
+});
