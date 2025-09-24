@@ -90,7 +90,6 @@ body {
   letter-spacing: 3px;
   color: white;
   text-shadow: 2px 2px 2px rgb(255, 165, 0);
-  /* color:rgb(50, 26, 5) ; */
 }
 .info h4{
   font-family: "Seaweed Script", cursive;
@@ -242,6 +241,7 @@ body {
     background-image: radial-gradient(at 9.2% 73.7%, #ffddc9 0px, transparent 50%),
     radial-gradient(at 92.3% 7.6%, #fff9cf 0px, transparent 50%);
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 .brief-eve img{
   width: 30%;
@@ -249,6 +249,7 @@ body {
   border-radius: 15px; 
   box-shadow: 0 6px 18px rgb(50, 26, 5);
   overflow-x: hidden;
+  /* background-color: red; */
 }
 .brief-eve p{
   width: 60%;
@@ -698,7 +699,6 @@ body.prevent-background-scroll {
 .testimonial-carousel .next:hover {
   background: rgb(50, 26, 5);
   color: white;
-  /* z-index: 100; */
 }
 
 .testimonial-carousel .prev {
@@ -821,7 +821,7 @@ body.prevent-background-scroll {
 @media (max-width: 800px) {
 
   #intro {
-    padding: 25px;
+    padding: 15px;
   }
 
   .plate {
@@ -829,16 +829,16 @@ body.prevent-background-scroll {
   }
 
   .info {
-    gap: 20px;
-    /* padding: 30px 30px; */
-    padding: 20px 20px;
+    gap: 15px;
+    padding: 15px 15px;
+    /* background-color: red; */
   }
 
   .info h1 {
     font-size: 2.3rem;
   }
   .info h4{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   #content {
