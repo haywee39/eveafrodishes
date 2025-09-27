@@ -39,9 +39,13 @@
     <div class="section-header">
       <div class="container">
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          <!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. -->
+          At Eve Afro Dishes, we believe that food is more than just a meal — it’s a connection to culture, tradition, and community. 
+          Whether you’re reaching out to place an order, plan a special event, or simply learn more about our authentic African delicacies, 
+          we’re always happy to hear from you. <br>
+          Get in touch today and let us bring unforgettable flavors straight to your table.
         </p>
       </div>
     </div>
@@ -85,8 +89,16 @@
         </div>
         
         <div class="contact-form">
-          <form action="" id="contact-form">
+          <form action="https://formsubmit.co/eveafrodishes@gmail.com" method="POST" id="contact-form">
             <h2>Send Message</h2>
+
+                <!-- Hidden settings -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Contact Form Submission!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+
             <div class="input-box">
               <input type="text" required="true" name="">
               <span>Full Name</span>
@@ -123,7 +135,21 @@
     
      <!-- ********************************************** -->
     <div id="company-name"></div>
-    <!-- ************************************** -->    
+    <!-- ************************************** -->   
+     <!-- 📍 Full-Width Location Section -->
+      <section id="location" style="width:100vw; margin-left:calc(-50vw + 50%);">
+
+        <!-- Responsive Map -->
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps?q=86+Alverley+Road+Coventry+West+Midlands&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+     <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
     <div id="footer"></div>
     <!-- ************************************* -->
 
