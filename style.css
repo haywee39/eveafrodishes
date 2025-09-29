@@ -693,6 +693,7 @@ body.prevent-background-scroll {
   border-radius: 50%;
   cursor: pointer;
   transition: background 0.3s;
+  background-color: transparent;
 }
 
 .testimonial-carousel .prev:hover,
@@ -902,5 +903,55 @@ body.prevent-background-scroll {
 }
 }
 /* ***************************** */
+
+/* ============================= */
+/*What Customers Says**** Responsive Media Queries */
+/* ============================= */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .testimonial-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .testimonials .section-title {
+    font-size: 1.7rem;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .testimonial-author img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-carousel button.prev,
+  .testimonial-carousel button.next {
+    /* font-size: 1rem; */
+    /* padding: 8px 30px; */
+  }
+    .testimonial-carousel .prev {
+  left: -15px;
+  }
+
+  .testimonial-carousel .next {
+    right: -15px;
+  }
+}
  
 
